@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tatiana Marques - Desenvolvedora Front-end</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/logoNF.png" alt="Logo de Taty">
+        </div>
+        <ul>
+            <li><a href="https://github.com/tatianamarques">GitHub</a> </li>
+            <li><a href="https://www.linkedin.com/in/tatiana-marques-servi%C3%A7os-web/">LinkedIn</a></li>
+            <li><a href="mailto:tatiana@multifacetaty.com.br">E-mail</a></li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Tatiana Marques</h1>
+                <h5>Desenvolvedora Front-End</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+            <div style="display: none;"  id="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate exercitationem ipsam quia atque enim, sint numquam dolorem totam veritatis optio quisquam commodi aut quaerat sunt voluptatem repellat corrupti tempore quis!</p>
+            </div>
+            <div class="form">
+                <div class="pedido">ESTE SITE É SÓ UM EXEMPLO.</div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail :)">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
